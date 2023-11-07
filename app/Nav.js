@@ -1,17 +1,18 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Nav = () => {
   return (
     <nav>
       <ul>
         <li>
-          <a href="/">Home</a>
+          <Link href="/">Home</Link>
         </li>
         <li>
-          <a href="/about">About</a>
+          <Link href="/about">About</Link>
         </li>
         <li>
-          <a href="/blog">Blog</a>
+          <Link href="/blog">Blog</Link>
         </li>
       </ul>
     </nav>
