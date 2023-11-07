@@ -8,9 +8,9 @@ function BlogList({ posts }) {
       {posts &&
         posts.map((post) => (
           <li key={post.id}>
-            <Link href={`/blog/${post.id}`} className={styles.blogLink}>
+            <Link href={`/blog/${post.id}`}>
               {post.id}.......
-              {post.title}
+              <span className={styles.blogLink}>{post.title}</span>
             </Link>
           </li>
         ))}
