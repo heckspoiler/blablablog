@@ -1,0 +1,35 @@
+.blogList {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin-top: 2rem;
+    gap: 20px;
+
+}
+
+.blogLink {
+    position: relative;
+    transition: color 0.2s ease-in-out;
+}
+
+.blogLink:hover {
+    color: rgb(11, 11, 255);
+}
+
+.blogLink::before {
+    position: absolute;
+    content: "";
+    background-color: lime;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: width 0.2s ease-in-out;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.blogLink:hover::before {
+    width: 100%;
+}

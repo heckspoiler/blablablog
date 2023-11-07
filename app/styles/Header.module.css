@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: calc(2rem + 3vh);
+    align-items: center;
+    padding: 10px 25px;
+    background-color: whitesmoke;
+    gap: 40px;
+}

@@ -1,0 +1,45 @@
+.list {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.list li {
+    z-index: 2;
+}
+
+.link {
+    text-decoration: underline;
+    position: relative;
+    padding: 1px;
+    display: block;
+    padding: 5px 10px;
+    text-align: center;
+
+}
+
+
+.link::before {
+    position: absolute;
+    content: "";
+    background-color: lime;
+    height: 0%;
+    width: 100%;
+    z-index: -1;
+    transition: height 0.1s ease-in-out, opacity 0.1s ease-in-out;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+
+}
+
+
+
+.link:hover::before {
+    height: 100%;
+    opacity: 1;
+
+}
