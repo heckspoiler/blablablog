@@ -1,18 +1,25 @@
 import React from 'react';
 import Link from 'next/link';
+import styles from './Nav.module.css';
 
 const Nav = () => {
   return (
     <nav>
-      <ul>
+      <ul className={styles.list}>
         <li>
-          <Link href="/">Home</Link>
+          <Link className={styles.link} href="/">
+            Home
+          </Link>
         </li>
         <li>
-          <Link href="/about">About</Link>
+          <Link className={styles.link} href="/about">
+            About
+          </Link>
         </li>
         <li>
-          <Link href="/blog">Blog</Link>
+          <Link className={styles.link} href="/blog">
+            Blog
+          </Link>
         </li>
       </ul>
     </nav>

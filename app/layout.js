@@ -2,11 +2,10 @@ import { Inter } from 'next/font/google';
 import Header from './Header';
 import Footer from './Footer';
 import './globals.css';
-import { Roboto } from 'next/font/google';
+import { Roboto_Mono } from 'next/font/google';
 // const inter = Inter({ subsets: ['latin'] });
-const roboto = Roboto({
+const robotoMono = Roboto_Mono({
   subsets: ['latin'],
-  weight: ['100', '300', '400', '500', '700', '900'],
   fallback: ['Helvetica Neue', 'sans-serif'],
 });
 
@@ -18,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={robotoMono.className}>
         <Header />
         {children}
         <Footer />
